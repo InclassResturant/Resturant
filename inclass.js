@@ -50,19 +50,14 @@ app.get("/form", function(req, res) {
 });
 
 // Create New Characters - takes in JSON input
-app.post("/api/new", function(req, res) {
-    var newcharacter = req.body;
-    newcharacter.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
+app.post("/tables", function(req, res) {
+    var newtable = req.body;
+    newtable.routeName = newtable.name.replace(/\s+/g, "").toLowerCase();
 
-    console.log(newcharacter);
+    console.log(newtable);
 
-    characters.push(newcharacter);
+    reservations.push(newtable);
 
-    res.json(newcharacter);
+    res.json(newtable);
 });
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-});
