@@ -65,6 +65,7 @@ app.get("/form", function(req, res) {
 app.get("/api/:Reservations?", function(req, res) {
     var chosen = req.params.Reservations;
 
+<<<<<<< HEAD
     // if (Reservations.length < 5) {
     //     console.log(Reservations);
     // } else {
@@ -88,10 +89,23 @@ app.post("/form", function(req, res) {
     characters.push(newReservation);
 
     res.json(newReservation);
+=======
+// Create New Characters - takes in JSON input
+app.post("/tables", function(req, res) {
+    var newtable = req.body;
+    newtable.routeName = newtable.name.replace(/\s+/g, "").toLowerCase();
+
+    console.log(newtable);
+
+    reservations.push(newtable);
+
+    res.json(newtable);
+>>>>>>> 7ece9069c39da7e376029adfef72a01b22f1b0a8
 });
 
-// Starts the server to begin listening
-// =============================================================
+//App listener 
+//===================================================
 app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+	console.log("App listening on port" + PORT);
 });
+//===================================================
