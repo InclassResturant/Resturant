@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-size: 18px;
+  color:;
+  line-height: 150%;
+  background:;
+}
+
+header {
+  background:;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0px 0;
+  font-size: 0px;
+  color: #eee;
+  text-align: center;
+  background:;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h4 {
+
+}
+
+footer {
+	display: block;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.jumbotron {
+	padding-top: 48px;
+	padding-right: 60px;
+	padding-bottom: 48px;
+}
+
+.glyphicon.glyphicon-fire {
+	top: 1px;
+	display: inline-block;
+	font-style: normal;
+	font-size:63px;
+	font-weight: 400;
+	line-height: 1;
+	box-sizing: border-box;
+}
